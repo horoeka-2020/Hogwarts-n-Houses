@@ -4,7 +4,8 @@
   "description": "Tai Rod Gavin and Carolines Repo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "dev" : "npm nodemon --ignore names.json"
   },
   "repository": {
     "type": "git",
