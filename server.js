@@ -9,4 +9,4 @@ server.use(express.urlencoded({extended: false}))
 server.engine('hbs', hbs({extname: 'hbs'}))
 server.set('view engin', 'hbs')
 
-module.exports = servers
+module.exports = server
