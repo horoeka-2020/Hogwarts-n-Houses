@@ -1,5 +1,45 @@
 {
   "Houses": [
-
+  {
+    "Hufflepuff": {
+      "name": [
+        "Tai",
+        "Rodrigo",
+        "Gavin",
+        "Caroline"
+      ]
+    }
+  }, 
+  {
+    "Slytherin": {
+      "name": [
+        "Jack",
+        "Dave",
+        "Claire",
+        "Al"
+      ]
+    }
+  }, 
+  {
+    "Gryffindor": {
+      "name": [
+        "Maria",
+        "Gio",
+        "Field",
+        "Anna",
+        "Tom"
+      ]
+    }
+  }, 
+  {
+    "Ravenclaw": {
+      "name": [
+        "Crystal",
+        "Kenneth",
+        "Kittisan",
+        "Shelly"
+      ]
+    }
+  }
   ]
 }
