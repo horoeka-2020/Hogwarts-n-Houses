@@ -10,26 +10,21 @@ const filePath = path.join(__dirname, 'names.json')
 
 module.exports = router
 
+// get request for the home page
 router.get('/', (req, res) => {
-    // fs.readFile(filePath, 'utf8', (err, contents) => {
-    //     if (err) return res.sendStatus(500)
-    //     const names = JSON.parse(contents)
-    //     const viewHouses = {
-    //         houses: names.houses
-    //     }
-    // })
     res.render('home')
 })
+
 router.get('/:id', (req, res) => {
     const houseId = Number(req.params.id)
-    //   console.log(houseId)
+   
     fs.readFile(filePath, 'utf8', (err, contents) => {
 
         if (err) return res.sendStatus(500)
 
         const names = JSON.parse(contents)
         const houseNames = names.Houses.find(({ id }) => id === houseId)
-        // console.log(houseNames)
+   
         const viewHouse = {
 
             id: houseNames.id,
@@ -39,8 +34,6 @@ router.get('/:id', (req, res) => {
     })
 
 })
-
-
 
 router.post('/:id', (req, res) => {
     const addName = req.body.name
@@ -59,16 +52,12 @@ router.post('/:id', (req, res) => {
         })
     })
 })
+
 router.get('/display/display', (req, res) => {
     fs.readFile(filePath, 'utf8', (err, contents) => {
         if (err) return res.sendStatus(500)
         const data = JSON.parse(contents)
 
-
-        // const viewHouse = {
-        //     name: houseNames.name
-
-        // }
         res.render('display')
     })
 
