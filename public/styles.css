@@ -72,4 +72,7 @@
     
     .dropdown:hover .dropdown-content {display: block;}
     
-    
+    .footer{
+      position: fixed;
+      bottom: 0;
+  }
