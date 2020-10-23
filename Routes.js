@@ -20,6 +20,26 @@ router.get('/', (req, res) => {
     // })
     res.render('home')
 })
+router.get('/:id', (req, res) => {
+    const houseId = Number(req.params.id)
+    //   console.log(houseId)
+    fs.readFile(filePath, 'utf8', (err, contents) => {
+
+        if (err) return res.sendStatus(500)
+
+        const names = JSON.parse(contents)
+        const houseNames = names.Houses.find(({ id }) => id === houseId)
+        // console.log(houseNames)
+        const viewHouse = {
+
+            id: houseNames.id,
+            image: houseNames.image
+        }
+        res.render('houses', viewHouse)
+    })
+
+})
+
 
 
 router.post('/:id', (req, res) => {
@@ -40,35 +60,16 @@ router.post('/:id', (req, res) => {
     })
 })
 router.get('/display/display', (req, res) => {
-    const id = Number(req.params.id)
     fs.readFile(filePath, 'utf8', (err, contents) => {
         if (err) return res.sendStatus(500)
-        const names = JSON.parse(contents)
-        const houseNames = names.Houses.find(val => val.id === id)
-        const viewHouse = {
-            name: houseNames.name
+        const data = JSON.parse(contents)
 
-        }
-        res.render('display', viewHouse)
-    })
 
-})
-router.get('/:id', (req, res) => {
-    const houseId = Number(req.params.id)
-    //   console.log(houseId)
-    fs.readFile(filePath, 'utf8', (err, contents) => {
+        // const viewHouse = {
+        //     name: houseNames.name
 
-        if (err) return res.sendStatus(500)
-
-        const names = JSON.parse(contents)
-        const houseNames = names.Houses.find(({ id }) => id === houseId)
-        // console.log(houseNames)
-        const viewHouse = {
-
-            id: houseNames.id,
-            image: houseNames.image
-        }
-        res.render('houses', viewHouse)
+        // }
+        res.render('display')
     })
 
 })

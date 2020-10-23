@@ -77,6 +77,11 @@
     .dropdown:hover .dropdown-content {display: block;}
 
 
+    .yourHouse {
+      width: 20%;
+    }
+
+
     label{
         font-family: herculanum;
         font-size: 30px;
