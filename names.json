@@ -1,45 +1,53 @@
 {
   "Houses": [
-  {
-    "Hufflepuff": {
-      "name": [
-        "Tai",
-        "Rodrigo",
-        "Gavin",
-        "Caroline"
-      ]
+    {
+      "id": 1,
+      "Hufflepuff": {
+        "name": [
+          "Tai",
+          "Rodrigo",
+          "Gavin",
+          "Caroline"
+        ]
+      },
+      "image": "/images/hufflepuff.png"
+    },
+    {
+      "id": 2,
+      "Slytherin": {
+        "name": [
+          "Jack",
+          "Dave",
+          "Claire",
+          "Al"
+        ]
+      },
+      "image": "/images/slytherin.png"
+    },
+    {
+      "id": 3,
+      "Gryffindor": {
+        "name": [
+          "Maria",
+          "Gio",
+          "Field",
+          "Anna",
+          "Tom"
+        ]
+      },
+      "image": "/images/gryffindor.png"
+    },
+    {
+      "id": 4,
+      "Ravenclaw": {
+        "name": [
+          "Crystal",
+          "Kenneth",
+          "Kittisan",
+          "Shelly"
+        ]
+      },
+      "image": "/images/ravenclaw.png"
     }
-  }, 
-  {
-    "Slytherin": {
-      "name": [
-        "Jack",
-        "Dave",
-        "Claire",
-        "Al"
-      ]
-    }
-  }, 
-  {
-    "Gryffindor": {
-      "name": [
-        "Maria",
-        "Gio",
-        "Field",
-        "Anna",
-        "Tom"
-      ]
-    }
-  }, 
-  {
-    "Ravenclaw": {
-      "name": [
-        "Crystal",
-        "Kenneth",
-        "Kittisan",
-        "Shelly"
-      ]
-    }
-  }
   ]
 }
