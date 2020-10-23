@@ -13,10 +13,10 @@
     }
 
     #header {
-        font-size: 50px;
+        font-size: 75px;
         width: 75%;
         margin: 25px;
-        padding-top: 25px;
+
     }
     
 
@@ -24,15 +24,21 @@
         height: 150px;
         position: relative;
         left: 80%;
-        top: -100px;
+        top: -120px;
+    }
+
+    .choose{
+        font-family: herculanum;
+        font-size: 25px;
+        float: center;
+        position: relative;
+        top: -50px;
     }
 
     #hat {
         width: 300px;
-        margin: auto;
+        float: center;
         position: relative;
-        top: -30px;
-        z-index: 20;
     }
 
     .dropbtn {
@@ -52,13 +58,11 @@
     
     .dropdown-content {
       font-family: herculanum;
-      font-size: 45px;
+      font-size: 30px;
       display: none;
-      position: absolute;
+      position: relative;
       background-color: #f1f1f1;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
+      min-width: 150px;
     }
     
     .dropdown-content a {
@@ -71,8 +75,29 @@
 
     
     .dropdown:hover .dropdown-content {display: block;}
-    
+
+
+    label{
+        font-family: herculanum;
+        font-size: 30px;
+    }
+
+    .text{
+        font-family: herculanum;
+    }
+    button{
+        font-family: herculanum;
+        height: 40px;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px 0px darkgrey; 
+    }
+    input{
+        height: 35px;
+        border-radius: 10px;
+    }
+  
     .footer{
-      position: fixed;
-      bottom: 0;
-  }
+        position: fixed;
+        bottom: 0;
+    }
